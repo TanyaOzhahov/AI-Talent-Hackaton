@@ -196,10 +196,10 @@ tagged_text = tag_proper_nouns(chinese_text, entities)
 
 tagged_text
 
-!export YANDEX_API_KEY=AQVNxDjsG_WBJvlAVaBFe8Fv2agI-O4GhF39G9GA
+!export YANDEX_API_KEY=API_KEY
 
 import os
-os.environ['YANDEX_API_KEY'] = 'AQVNxDjsG_WBJvlAVaBFe8Fv2agI-O4GhF39G9GA'
+os.environ['YANDEX_API_KEY'] = 'API_KEY'
 
 text = "小米公司宣布了新产品。"
 
@@ -308,9 +308,9 @@ import os
 
 global client  # pylint:  disable=global-statement
 client = clickhouse_connect.get_client(
-    host='ie8703b22o.eu-central-1.aws.clickhouse.cloud',
+    host='HOST',
     user='default',
-    password='_QG1JpW57iXEC',
+    password='PASS',
     secure=True
 )
 
